@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+html{
+  margin:0;
+  padding:0;
+  padding-right:0;
+  margin-right:0;
+
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(0, 0, 0);
+  margin:0;
+  color: rgb(255,255,255);
+  overflow-y:scroll;
+}
+h1{
+  text-align: center;
+  font-weight:bold;
+  font-size: 60px;
+}
+.butt{
+  margin: 0 auto;
+  background-color:rgba(255,255,255,.3);
+  border-color: rgb(0,0,0);
+  font-size: 15px;
+  text-align:center;
+  border-style:solid;
+  border-radius:7px;
+  border-width:thin;
+  width:200px;
+  padding: 10px;
+  font-weight:500;
+}
+.pretty:hover, .top:hover,.butt:hover{
+  color:rgba(100,100,100,.8);
+}
+.butt:hover{
+  color:rgba(10,10,10,.9);
+}
+.pretty:link,
+.pretty:visited{
+  text-decoration:none;
+  text-decoration-line:none;
+  color:inherit;
+  font-weight:inherit;
+}
+.cover{
+  position: relative;
+  z-index: .9;
+  padding:3%;
+
+ }
+.cover .bg {
+   background: url("image-2.png") center center;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:100%;
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: .28;
+}
+.top{
+  font-size:30px;
+  text-align:right;
+  background-color: rgb(0,0,0);
+  color:rgb(255,255,255);
+  margin:0;
+  padding-top:4%;
+  margin-left: 8%;
+  text-align:left;
+  font-weight:700;
+}
+.tab{
+  font-size:20px;
+  text-align:right;
+  background-color: rgb(0,0,0);
+  color:rgb(255,255,255);
+  margin:0;
+  padding:1%;
+  overflow: auto;
+  white-space: nowrap;
+  margin-right:7%;
+}
+.minitab:link,
+.minitab:visited{
+  padding:25px;
+  text-decoration:none;
+  color:rgb(255,255,255);
+  font-weight:700;
+}
+.minitab:hover{
+  color:rgba(100,100,100,.8);
+  font-weight:900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  padding-left:8%;
+  padding-right:8%;
+  height:100%;
+  display:table;
+  width:100%;
+}
+.container2{
+  display:table-cell;
+  width: 20%;
+  padding:20px;
+  color:rgb(255,255,255);
+}
+.info{
+  background-color:rgb(255,255,255);
+  padding:10%;
+  color:rgb(0,0,0);
+  display:table;
+  width:100%;
+  height:100%;
+}
+.info-column{
+  display:table-cell;
+}
+.tempcont{
+  padding-top:5%;background-color:rgb(255,255,255);color:rgb(255,255,255);
+  padding-bottom:5%;
+}
+#pic{
+  float:left;
+  margin-right:8%;
+  margin-left:8%;
+  margin-top:50px;
+  width:30%;
+}
+#introme{
+  color:rgb(0,0,0);
+  float:left;
+  text-align:justify;
+  width:50%;
+}
+#actualpic{
+  width:250px;
+  height:250px;
+}
+@media only screen and (max-width: 800px) {
+  .container2 {
+    display: block;
+    width: 100%;
+  }
+  .container{
+    padding:0;
+    display:table;
+    width:100%;
+  }
+  .
+  .info-column {
+    display:block;
+    width:100%;
+  }
+  .info{
+    padding:1%;
+    display:table;
+    width:100%;
+  }
+  .tempcont{
+    padding-top:0;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  #pic{
+    float:none;
+    margin:0 auto;
+    width:100px;
+    height:100px;
+  }
+  #introme{
+    float:none;
+    width:100%;
+  }
+  #actualpic{
+    width:100px;
+    height:100px;
+  }
+}
+
+.bottom{
+  padding:2%;
+  margin-left:8%;
+}
+
+.popup-container{
+  display:none;
+  position:fixed;
+  top:0%;
+  left:0%;
+  background-color: rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+}
+.popup-wrap-large{
+  position:fixed;
+  display: block;
+  top:0%;
+  left:0%;
+  background-color: rgba(0,0,0,0);
+  width:100%;
+  height:100%;
+}
+.popup-pos-large .body{
+  z-index:-1;
+  opacity:.8;
+}
+.popup-pos-large{
+  border-radius: 25px;
+  position:fixed;
+  background-color: rgba(255, 255, 255,.9);
+  width:300px;
+  top:30%;
+  height:340px;
+  padding: 50px;
+  z-index:1;
+  color:rgb(0,0,0);
+  font-size:20px;
+  text-align:center;
+  right:10%;
+}
+
+#firsttime{
+  background-color:rgb(255,255,255);
+  padding:3%;
+  padding-left:8%;
+  color:rgb(0,0,0);
+}
+#form{
+  background-color:rgb(255,255,255);
+  padding:3%;
+  padding-left:8%;
+  color:rgb(0,0,0);
+}
