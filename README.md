@@ -1,5 +1,4 @@
-# attutor.github.io
-A+ tutor
+# alejandrapr.github.io
 ---
 permalink: /index.html
 ---
