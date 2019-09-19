@@ -1,269 +1,93 @@
 <!DOCTYPE html>
-<!--
-1) contact me section
-
-2) booking section
-3) new student link/page
-
-**terms and conditions Pages
-5) me (have my own page anyway...)
-
--->
-<html lang="en" style="width:100%;padding:0">
+<html>
   <head>
-    <title>A+</title>
+    <title>Alejandra Perea</title>
+    <link rel="icon" href="a.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
-    </head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
 
   <body>
-    <a class="pretty" href="index.html"><div class="top">A+ Tutor</div></a>
+    <div class="aheader">
 
-    <!--TOP-->
-      <div class="tab">
-        <ul>
-          <a class="minitab" href="priceplans.html"><lo class="minitab">PRICING</lo></a>
-          <a class="minitab" href="blog.html"><lo class="minitab">BLOG</lo></a>
-          <a class="minitab" href="#contact">CONTACT</a><!--possibly my resume contact-->
-        </ul>
-      </div>
+      <ul>
+        <li style="float:left;">Alejandra Perea Rojas</li>
+        <li style="margin-right:60px;"><a href="/">
+          <img height="30px" width="30px" src="icon/link.svg"/></a></li>
+        <li style="margin-right:40px"><a target="_blank" href="https://www.facebook.com/alecita2001">
+          <img height="30px" width="30px" src="icon/facebook.svg"/></a></li>
+        <li style="margin-right:45px;"><a href="mailto:alecita9perea@gmail.com">
+          <img height="30px" width="30px" src="icon/email.svg"/></a></li>
+      </ul>
 
-    <!--COVER-->
-      <div class="cover">
-          <div class="bg"></div>
-          <h1>Need a Tutor?</h1><br />
-          <a  class="pretty" href="#book" onclick="toggle_visibility('book')"><div class="butt" style="font-weight:700;font-size:30px">Book a Session</div></a>
-          <div style="height:260px;color:rgb(255,255,255);text-align:center">
-            <div style="display:inline-block">
-              <p style="font-size:20px;text-align:center;margin-top:45px;">from a member of <br>Harvard Class of 2023</p>
-              <img src="harvard_shield.png" alt="Harvard Student" width="100px">
+      <div style="margin:0px 10px 0px 10px;padding:0px">
+        <div class="cover2" style="background-color:#c73f4a;padding:0px">
+          <div class="cover">
+            <h1 class="white">Hello World!</h1>
+            <div style="font-size:19px;padding-left:20px"><a href="blog">check out my blog!</a><br>
             </div>
           </div>
+        </div>
       </div>
 
-      <div style="height:50px"></div>
-
-    <!--SUBJECTS-->
-      <div class="white">
-        <div class="tempcont" >
-          <h1>How can I help you?</h1>
-          <div class="container">
-
-            <div class="container2" style="background-color:rgba(0,150,0,.8);border-color:rgba(0,150,0,.8)">
-              <h2>Math</h2>
-              <ul>
-                <li>General Help Grades 1-8</li>
-                <li>Algebra 1</li>
-                <li>Algebra 2</li>
-                <li>Statisitcs (AP and non-AP)</li>
-                <li>Geometry</li>
-                <li>Pre-Calculus</li>
-                <li>Calculus AB & BC (AP)</li>
-              </ul>
-            </div>
-
-            <div class="container2" style="background-color:#a52a49;border-color:rgba(150,0,0,.8)">
-              <h2>New York Regents</h2>
-              <ul>
-                <li>Living Environment Regents</li>
-                <li>Chemistry Regents</li>
-                <li>Physics Regents</li>
-                <li>World History Regents</li>
-                <li>World History Regents</li>
-                <li>US History Regents</li>
-                <li>Algebra I Regents</li>
-                <li>Algebra II Regents</li>
-                <li>Geometry Regents</li>
-              </ul>
-            </div>
-
-            <div class="container2" style="background-color:rgba(255, 112, 0,.9);border-color:#FF7000">
-              <h2>Personalized Help:</h2>
-              <ul>
-              <li>English (K-9)</li>
-              <li>Math (K-12)</li>
-              <li>ESOL (English as a Second Language)</li>
-              <li>Spanish (All Levels)</li>
-              </ul>
-            </div>
-          </div>
-          <!--COLLEGE BOARD SUBJECTS-->
-          <div class="container">
-
-            <div class="container2" style="background-color:rgba(255, 195, 0,.9);border-color:#FFC300">
-              <h2>AP Exams</h2>
-              <ul>
-                <li>AP Chemistry (Prep and Content)</li>
-                <li>AP Physics (Prep and Content)</li>
-                <li>AP Computer Science (Prep and Content)</li>
-                <li>AP Statistics</li>
-                <li>AP Calculus AB and BC</li>
-              </ul>
-            </div>
-
-            <div class="container2" style="background-color:#254a82;border-color:#1a335a;">
-              <h2>The SAT</h2>
-              <ul>
-                <li>Math SAT Lessons</li>
-                <li>Reading/Writing SAT Lessons</li>
-                <li>Math Exam Prep (recommended)</li>
-                <li>English Exam Prep (recommended)</li>
-                <li>Combo: Lessons and Exam Prep</li>
-              </ul>
-            </div>
-
-            <div class="container2" style="background-color:rgba(0, 143, 255,.8);border-color:#008FFF">
-              <h2>SAT Subject Tests (Prep)</h2>
-              <ul>
-                <li>Chemistry</li>
-                <li>Physics</li>
-                <li>Math I</li>
-                <li>Math II</li>
-                <li>Spanish</li>
-              </ul>
-            </div>
-
+      <div class="intro">
+        by a college student who likes <button onclick="toggle()">to code</button> :)
+        <div id="popup" style="display:none;">
+          <a onclick="toggle()"><div class="black_overlay"></div></a>
+          <div class="popup_content" >
+            <p style="font-size:80px;">my Projects</p>
+            <a onclick="toggle()">close</a>
           </div>
         </div>
       </div>
 
+    </div>
+  </body>
 
-    <!--who am i and my mission-->
-      <div class="white" style="padding-left:15%;padding-right:15%;width:100%;height:630px;">
-        <div class="introme" style="background-color:rgb(13,13,13);color:#ffffff">
-          <div style="display:inline-block;width:90%">
-            <h2>Hi, I'm Alejandra!</h2><p>
-               A current Harvard student with years of experience in tutoring for many subjects.
-               Also able to help students prepare for the SAT, the SAT Subject
-               Tests, and the ACT. <br><br>
-               Because of my experience in special education,
-               I've learned to make sure students understand the material, and with different engaging techniques,
-               I am able to teach students effectively.<br><br>
-               And because as a recent high school graduate, I can teach students how manage their workload
-               and help them achieve their goals. I can help in the college process too.
-          </div>
-        </div>
-        <div style="float:left;width:40%;height:500px;padding:0;">
-          <img style="height:100%;"src="me.png"></img>
-        </div>
+      <div class="container2">
+        <a href="tutor">need a tutor? I can help!</a>
       </div>
 
-      <div class="white">
-        <div class="pricing" >
-          <a class="pretty"><h2>What I charge:</h2></a>
-          $50/hour for homework help, math and science skill-building, and testing prep.
-          $90 for a 2 hour exam prep session.
+  <body>
+    <div class="aheader">
+
+      <div class="container3">
+        <div id="toprint" class="cell1">
+          <embed id="res" src="https://drive.google.com/file/d/1ylVUoUn59qdxWd4rp1lFz9Vo_CvHKCzK/preview">
         </div>
-
-        <div style="height:50px;"></div>
-
-        <div class="pricing">
-          <a class="pretty"><h2>Availability</h2></a>
-            <iframe
-              width="100%" style="border-width:0" width="950" height="600" frameborder="0" scrolling="no"
-              src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%237986CB&amp;ctz=America%2FNew_York&amp;src=Y2o1bDNpZDRybnAxY3RrMm1idWMyZ252ZzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;showTitle=0&amp;mode=WEEK">
-            </iframe>
+        <div class="cell2"><br><br>
+          <a href="https://drive.google.com/uc?export=download&id=1ylVUoUn59qdxWd4rp1lFz9Vo_CvHKCzK" download="Alejandra Perea's Resume (PDF)" >
+            <img height="50px" width="50px" src="icon/inbox.svg"/>
+          </a><br><br>
+          <a onClick="printDiv('toprint')">
+            <img height="50px" width="50px" src="icon/printer.svg"/>
+          </a>
         </div>
-      </div>
+      </div><br>
 
-    <!--Contact me-->
-      <div class="white" style="padding:0;text-align:center;background-color:rgb(225,225,225);">
-        <div style="display:inline-block;">
-          <div style="display:table">
-          <div class="contact">
-            <h2>Contact me</h2>
-            Have a question?  Or need a tutor?<br>
-            <br> Just fill the form below or email/text/call me!
-            <br><br>
+    </div>
 
-            <div style="text-align:left">
-            <form class="form" action="#contact" method="post" enctype="multipart/form-data" autocomplete="off">
-              <div class="alert alert-error"><?= $_SESSION['message'] ?></div>
-              <input type="text" placeholder="Name" name="name" required /><br>
-              <input type="text" placeholder="Phone or email " name="email_phone" required /><br>
-              <input type="text" placeholder="Subject" name="subject" /><br>
-              <textarea cols="40" type="message" rows="5" name="message" required></textarea>
-              <input type="submit" value="Send" name="message" class="butt" /><br>
-            </form>
-            </div>
-
-            <br><br>
-            You'll hear back from me soon!
-          </div>
-          <div style="display:table-cell;font-size:20px"><br><br><br><br><br><br>
-            Alejandra Perea Rojas<br><br>
-            <b>Email:</b> alecita9perea@gmail.com<br><br>
-            <b>Mobile:</b> (973) 337-7258<br>
-          </div>
+    <div class="footer"><br><br>
+      Alejandra J. Perea Rojas<br> (973) 337-7258 <br> alecita9perea@gmail.com <br><br>
+        <div style="font-size:11px">
+          icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect
+          </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>
+          website entirely designed & developed by Alejandra
         </div>
-        </div>
-      </div>
-
-      <div class="cover" style="text-align:center;">
-        <div class="bg"></div>
-        <a  class="pretty" href="#book" onclick="toggle_visility('book')"><div class="butt" style="width:250px;font-weight:700;font-size:30px;display:table-cell;">Book a Session</div></a>
-        <a  class="pretty" href="alejandraperea.com"><div class="butt" style="width:250px;font-weight:700;font-size:30px;display:table-cell;">About me</div></a>
-      </div>
-
-    <!--(MY BLOG)-TOP ARTICLES-->
-
-    <!--BOTTOM-->
-      <div class="bottom">
-        <div style="display:table;float:left">
-
-        <div style="display:table-cell">
-          <a class="minitab" href="priceplans.html">FIRST TIMER</a>
-          <ul>
-            <a class="minitab" href="priceplans.html#services"><li class="minitab">Services</li></a>
-            <a class="minitab" href="priceplans.html#packages"><li class="minitab">Plans</li></a>
-          </ul>
-        </div>
-
-        <div style="display:table-cell">
-          <a class="minitab" href="#contact">CONTACT</a>
-          <ul>
-            <a class="minitab" href="https://alejandraperea.com"><li class="minitab">Alejandra's Site</li></a>
-            <a class="minitab" href="https://drive.google.com/file/d/1a3bFIU2OukKUW6hSCPrnTB1hW5-dR1pN/view"><li class="minitab">Resume (PDF)</li></a>
-          </ul>
-        </div>
-        </div>
-
-        <div style="float:right;margin-right:10%;text-align:right"><a class="minitab" href="policy.html"><br>Terms and Conditions</a><br><br><br><a class="minitab" href="#" onclick="toggle_visibility('developed')">DEVELOPED BY ALEJANDRA.</a></div>
-
-      </div>
+    </div>
 
   </body>
 
-
-  <div id="book" class="popup-container">
-    <a onclick="toggle_visibility('book')" class="popup-wrap-large"></a>
-    <div class="popup-pos-large">
-      <!-- enter name, if more than one plan, specify which or add a new plan to coordinate over the phone, write the date down, SUBMIT BOOKING-->
-      <!-- you can always just email me, or text me or call me or voicemail me i prefer text though-->
-    </div>
-  </div>
-
-  <div style="text-align:center;width:100%;top:0;left:0">
-    <div id="developed" class="popup-container">
-      <a onclick="toggle_visibility('developed')" class="popup-wrap-large"></a>
-      <div class="popup-pos-large">
-        The entire site was designed and developed only by Alejandra Perea Rojas. <br><br>
-        Deployed and hosted through GitHub Pages.<br>
-        <p style="font-size:10px"><br>Outside image sources: Harvard.edu and Shutterstock.com</p>
-      </div>
-    </div>
-    </div>
-
   <script type="text/javascript">
-    function toggle_visibility(id){
-      var toggling = document.getElementById(id);
-      if (toggling.style.display == 'block')
-        toggling.style.display = 'none';
-      else
-        toggling.style.display = 'block';
-    }
+    function toggle(){
+      var x = document.getElementById('popup');
+      if(x.style.display==="none"){
+        x.style.display="block";
+      }else{
+        x.style.display="none";
+      }
+    };
   </script>
 
 </html>
